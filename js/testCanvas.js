@@ -1,4 +1,4 @@
-var c = document.getElementById("testCanvas");
+var c = document.getElementById("randomWalkCanvas");
 var ctx = c.getContext("2d");
 ctx.fillStyle = "white";
 ctx.fillRect(0, 0, c.width, c.height);
@@ -13,7 +13,7 @@ function clickFunction(e) {
     if(!running){
         running = true;
         
-        clearCanvas();    
+        clearRandomWalkCanvas();    
         
         var coordHolder = getMousePos(c,e);
         ctx.fillStyle = "#FF0000";
@@ -56,7 +56,7 @@ function clickFunction(e) {
     }
 }
 
-function clearCanvas(){
+function clearRandomWalkCanvas(){
     ctx.clearRect(0, 0, c.width, c.height);
     ctx.fillStyle = "white";
     ctx.fillRect(0, 0, c.width, c.height);

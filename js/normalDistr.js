@@ -10,7 +10,7 @@ function onclick(){
     var normalDistr = dropBalls();
     console.log(normalDistr);
 
-    var workArea = c.width - 100; //100 pixel buffer on either side
+    var workArea = canvas.width - 100; //100 pixel buffer on either side
     var spacePerBar = workArea/normalDistr.length; //Width of each bar
     
     
@@ -35,9 +35,9 @@ function onclick(){
 }
 
 function clearCanvas(){
-    context.clearRect(0, 0, c.width, c.height);
+    context.clearRect(0, 0, canvas.width, canvas.height);
     context.fillStyle = "white";
-    context.fillRect(0, 0, c.width, c.height);
+    context.fillRect(0, 0, canvas.width, canvas.height);
 }
 
 
