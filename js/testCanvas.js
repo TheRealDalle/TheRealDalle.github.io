@@ -24,6 +24,9 @@ function clickFunction(e) {
         posX = coordHolder.x;
         posY = coordHolder.y
 
+        console.log("PosX: " + posX);
+        console.log("PosY: " + posY);
+
 
         var steps = 0;
         
@@ -66,7 +69,7 @@ function randomAngle(){
 }
 
 function getMousePos(canvas, evt) {
-    var rect = c.getBoundingClientRect();
+    var rect = canvas.getBoundingClientRect();
     return {
       x: evt.clientX - rect.left,
       y: evt.clientY - rect.top
