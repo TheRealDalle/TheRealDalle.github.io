@@ -95,8 +95,54 @@
 	<canvas id="normalDistrCanvas" width="800" height="300" style="border:1px solid #000000;">
 	</canvas>
 	<script src="js/normalDistr.js"></script> 
+	<p><br></p>
+	<div class="titlelinesimple">
 
-	
+	<h1 class="subtitle">Mosaik-målare</h1>
+
+	<p>Yez yez, denna har ännu mindre syfte än de andra projekten.
+		Den målar "mosaik-plattor" när man drar musen över. Justera färgen med Röd, Grön, Blå, och Alpha nedan. Rensa och omformatera med knapparna under rutan.
+	</p>
+	<p><br></p>
+
+	R: <input type="number" id="myRed" value="0">
+	<p></p>
+	G: <input type="number" id="myGreen" value="0">
+	<p></p>
+	B: <input type="number" id="myBlue" value="255">
+	<p></p>
+
+	A: <input type="number" id="myAlpha" value="0.1">
+
+	<p></p>
+
+
+	<canvas id="tilesCanvas" width="800" height="600" style="border:1px solid #000000;">
+	</canvas>
+	<p></p>
+
+	New Width: <input type="number" id="newWidth" value="15">
+	<p></p>
+	New Height: <input type="number" id="newHeight" value="10">
+	<p></p>
+	<style>
+			.button1 {
+				border: none;
+  color: black;
+  background-color: #4CAF50;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+	  }
+	</style>
+	<button type="button" class="button1" id="resetCanvas"> Reset Canvas </button>
+
+	<script src="js/tiles.js"></script>
+
 
 	<!-- Portofolio
 	================================================== -->
