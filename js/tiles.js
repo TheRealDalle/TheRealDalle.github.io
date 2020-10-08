@@ -64,7 +64,7 @@ function clearTiles(){
     tilesCtx.fillRect(0, 0, c.width, c.height);
 }
 
-function getMousePos(canvas, evt) {
+function getMousePosTiles(canvas, evt) {
     var rect = tilesCanvas.getBoundingClientRect();
     return {
       x: evt.clientX - rect.left,
@@ -73,7 +73,7 @@ function getMousePos(canvas, evt) {
   }
 
 function hoverFunction(e){
-    var temp = getMousePos(c,e);
+    var temp = getMousePosTiles(c,e);
     var tilepos = getTile(temp.x,temp.y);
 
     var r = document.getElementById("myRed").value;
@@ -94,9 +94,7 @@ function resetFunction(){
     width = document.getElementById("newWidth").value;
     clearTiles();
     populateCanvas(width,height);
-
 }
-
 
 tilesCanvas.addEventListener('mousemove', hoverFunction);
 resetButton.addEventListener('mousedown', resetFunction);
