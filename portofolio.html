@@ -83,6 +83,8 @@
 	  }
 
 	</style>
+
+
 	<div class="smallProject">
 
 
@@ -165,92 +167,41 @@
 	</div>
 
 
-	<!-- Portofolio
-	================================================== -->
-	<!--
-	<div class="row center">
-		<div class="span16">
-			<div class="boxgrid slideright">
-				<img class="cover" src="img/portofolio/1.jpg" alt=""/>
-				<h3>Project Name</h3>
-				<p>
-					Decription<br/><a href="#" target="_BLANK">View link</a>
-				</p>
-			</div>
-			<div class="boxgrid thecombo">
-				<img class="cover" src="img/portofolio/2.jpg" alt=""/>
-				<h3>John Doe</h3>
-				<p>
-					Photographer<br/><a href="#" target="_BLANK">View link</a>
-				</p>
-			</div>
-			<div class="boxgrid slideright">
-				<img class="cover" src="img/portofolio/3.jpg" alt=""/>
-				<h3>John Doe</h3>
-				<p>
-					Photographer<br/><a href="#" target="_BLANK">View link</a>
-				</p>
-			</div>
-			<div class="boxgrid thecombo">
-				<img class="cover" src="img/portofolio/4.jpg" alt=""/>
-				<h3>Project Name</h3>
-				<p>
-					Decription<br/><a href="#" target="_BLANK">View link</a>
-				</p>
-			</div>
-			<div class="boxgrid slideright">
-				<img class="cover" src="img/portofolio/5.jpg" alt=""/>
-				<h3>John Doe</h3>
-				<p>
-					Art, Music, Word<br/><a href="#" target="_BLANK">Website</a>
-				</p>
-			</div>
-			<div class="boxgrid thecombo">
-				<img class="cover" src="img/portofolio/6.jpg" alt=""/>
-				<h3>Project Name</h3>
-				<p>
-					Decription<br/><a href="#" target="_BLANK">View link</a>
-				</p>
-			</div>
+	<p><br></p>
+
+
+	
+	<div class="smallProject">
+
+
+	
+		<h1 class="subtitle">Konvertera mellan baser</h1>
+	
+		<p>Konverterar mellan x = 2^y och x = 10^z.<br> Notera att icke-exponent talet inte klarar av att visas vid för höga tal
+			Detta beror på javascripts MAX_VALUE, som är det största talet javascript kan hantera.
+		</p>
+
+		Tal: <input type="number" id="totalValue" value="0">
+		<p></p>
+
+		2^ <input type="number" id="base2" value="0">
+		<p></p>
+		10^ <input type="number" id="base10" value="0">
+		<p></p>
+		
+		<button type="button" class="button1" id="convertNumbers"> Clear inputs </button>
+
+		<script src= "js/numberConversion.js"></script>
+	
 		</div>
-	</div>
-	-->
-	<!-- Footer 
-================================================== -->
+	
+		
+
+
+
 	<div class="footerli">
 	</div>
-	<!--
-	<div class="tweetarea">
-		<div class="tweettext">
-			<div class="row">
-				<div class="span-one-third">
-					<div class="tweet">
-					</div>
-				</div>
-				<div class="span-one-third">
-					<div class="centermargin">
-						<div class="facebook">
-							<a href="#"></a>
-						</div>
-						<div class="twitter">
-							<a href="#"></a>
-						</div>
-						<div class="google">
-							<a href="#"></a>
-						</div>
-						<div class="flickr">
-							<a href="#"></a>
-						</div>
-					</div>
-				</div>
-				<div class="span-one-third center">
-					 Have a project in mind? <br/>Contact me directly<br/>
-					<span class="small"><a href="mailto:emailhire@gmail.com">emailhire@gmail.com</a></span>
-				</div>
-			</div>
-		</div>
-	</div>
-	-->
+
 	<div class="footer center">
 		 &copy; Copyright Johan Taube 2020
 	</div>
@@ -258,50 +209,6 @@
 <!-- Ended Container-->
 <div class="footerend">
 </div>
-<!-- Portofolio Script 
-================================================== -->
-<!--Här är någon fint script för att flytta bilder på ett fint sätt
-<script type="text/javascript">
-			$(document).ready(function(){
-				//To switch directions up/down and left/right just place a "-" in front of the top/left attribute
-				//Vertical Sliding
-				$('.boxgrid.slidedown').hover(function(){
-					$(".cover", this).stop().animate({top:'-260px'},{queue:false,duration:300});
-				}, function() {
-					$(".cover", this).stop().animate({top:'0px'},{queue:false,duration:300});
-				});
-				//Horizontal Sliding
-				$('.boxgrid.slideright').hover(function(){
-					$(".cover", this).stop().animate({left:'325px'},{queue:false,duration:300});
-				}, function() {
-					$(".cover", this).stop().animate({left:'0px'},{queue:false,duration:300});
-				});
-				//Diagnal Sliding
-				$('.boxgrid.thecombo').hover(function(){
-					$(".cover", this).stop().animate({top:'260px', left:'325px'},{queue:false,duration:300});
-				}, function() {
-					$(".cover", this).stop().animate({top:'0px', left:'0px'},{queue:false,duration:300});
-				});
-				//Partial Sliding (Only show some of background)
-				$('.boxgrid.peek').hover(function(){
-					$(".cover", this).stop().animate({top:'90px'},{queue:false,duration:160});
-				}, function() {
-					$(".cover", this).stop().animate({top:'0px'},{queue:false,duration:160});
-				});
-				//Full Caption Sliding (Hidden to Visible)
-				$('.boxgrid.captionfull').hover(function(){
-					$(".cover", this).stop().animate({top:'160px'},{queue:false,duration:160});
-				}, function() {
-					$(".cover", this).stop().animate({top:'260px'},{queue:false,duration:160});
-				});
-				//Caption Sliding (Partially Hidden to Visible)
-				$('.boxgrid.caption').hover(function(){
-					$(".cover", this).stop().animate({top:'160px'},{queue:false,duration:160});
-				}, function() {
-					$(".cover", this).stop().animate({top:'220px'},{queue:false,duration:160});
-				});
-			});
-		</script>
-		-->
+
 </body>
 </html>
