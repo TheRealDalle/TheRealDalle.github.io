@@ -127,14 +127,54 @@
 	</p>
 	<p><br></p>
 
-	R: <input type="number" id="myRed" value="0">
+	<style>
+		.customSlider{
+			
+			-webkit-appearance: none;  /* Override default CSS styles */
+			
+			outline: none; /* Remove outline */
+			appearance: none;
+			width: 30%; /* Full-width */
+			height: 5px; /* Specified height */
+			background: #a9a9a9; /* Grey background */
+			
+			opacity: 1; /* Set transparency (for mouse-over effects on hover) */
+			-webkit-transition: .2s; /* 0.2 seconds transition on hover */
+			transition: opacity .2s;
+		}
+		.customSlider::-webkit-slider-thumb {
+			-webkit-appearance: none;
+			appearance: none;
+			width: 25px;
+			height: 25px;
+			background: #4CAF50;
+			cursor: pointer;
+		}
+
+		.customSlider::-moz-range-thumb {
+			width: 25px;
+			height: 25px;
+			background: #4CAF50;
+			cursor: pointer;
+		}
+	</style>
+
+	R: <input type="range" id="myRed" name="myRed" 
+	min="0" max="255" value="90" step="1" class="customSlider">
 	<p></p>
-	G: <input type="number" id="myGreen" value="0">
+	G: 
+	<input type="range" id="myGreen" name="myGreen" 
+	min="0" max="255" value="90" step="1" class="customSlider">
+	
 	<p></p>
-	B: <input type="number" id="myBlue" value="255">
+	B: <input type="range" id="myBlue" name="myBlue" 
+	min="0" max="255" value="90" step="1" class="customSlider">
+	
 	<p></p>
 
-	A: <input type="number" id="myAlpha" value="0.1">
+	A: <input type="range" id="myAlpha" name="myAlpha" 
+	min="0" max="1" value="0.1" step="0.01" class="customSlider">
+	
 
 	<p></p>
 
@@ -193,9 +233,14 @@
 
 		<script src= "js/numberConversion.js"></script>
 	
-		</div>
+	</div>
 	
-		
+	<p><br></p>
+
+	<div class="smallProject">
+		<a href="RSS.html" target="_blank"><h1 class="subtitle">Solsystemet i rätt skala</h1></a>
+		Öppnar i ny flik
+	</div>
 
 
 
