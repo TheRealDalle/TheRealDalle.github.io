@@ -85,7 +85,41 @@ crossorigin=""></script>
 <!-- Container starts
 ================================================== -->
 <div class="container">
-	<p>Solens diameter i meter: <input type="number" id="sunSizeInput" value="0.1"></p>
+
+	<h1 class="title">Solsystemet i rätt skala</h1>
+
+	<p style="padding: 15px; background-color: rgb(214, 228, 248); border-radius: 25px; border: 2px solid rgb(4, 22, 48);">
+		<picture style="float: right"><img src="img\solar-system.jpg", height="200", style="border-radius: 25px; border: 2px solid rgb(4, 22, 48);"></picture>
+		De flesta bilder på solsystemet får oss att se det i sjukt fel skala, och missbedömma storleken på saker.
+		Ett typ-exempel är bilden till höger, där storleken och avståndet mellan planeterna är enormt förvrängd. Endast ordningen avbildas korrekt.
+		<br>
+		<br>
+		
+		I exemplet nedan bestämmer du själv solens diameter i meter, och sedan dess position på jorden. Helst någonstans nära där du bor, så du kan orientera dig lättare.
+		Jag rekommenderar att använda en diameter på mellan 0.1 och 1 meter, för att saker ska få plats på rimliga avstånd.
+		Håll musen över omloppsbanan för ett objekt för att se dess "verkliga" storlek, i förhållande till din sol.
+		<br>
+		<br>
+		De objekt som finns är:
+		<br>
+		Solen
+		<br>
+		Solens 8 planeter
+		<br>
+		Pluto
+		<br>
+		Oort molnet <i>-som löst kan definieras som solsystemets yttersta kant</i>
+		<br>
+		Proxima Centauri  <i>-den närmsta stjärnan, förutom solen. Notera att du antagligen behöver zooma ut VÄLDIGT långt</i>
+
+	</p>
+
+
+	
+
+	<p style="padding: 15px; background-color: rgb(165, 188, 223); border-radius: 25px; border: 2px solid rgb(4, 22, 48);">
+		<b>Solens diameter i meter: </b>
+		<input type="number" id="sunSizeInput" value="0.1"></p>
 	<div id="mapid"></div>
 	<script src="js/planet.js"></script>
 	<script src="js/RSS.js"></script>
