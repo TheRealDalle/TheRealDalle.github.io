@@ -1,5 +1,7 @@
 var canvas = document.getElementById("normalDistrCanvas");
 var context = canvas.getContext("2d");
+var runButton = document.getElementById("runDistrButton");
+
 context.fillStyle = "white";
 context.fillRect(0, 0, canvas.width, canvas.height);
 context.font = "15px Arial";
@@ -41,19 +43,21 @@ function clearCanvas(){
 }
 
 
+
+//Returns array of each collumn and how many balls that landed in it.
+//Complexity O(b*l), where b=#balls and l=#levels
 function dropBalls(){
-    var balls = parseInt(prompt("How many balls?"),10);
-    var levels = parseInt(prompt("How many levels?"),10);
+    var balls = parseInt(document.getElementById("numBalls").value, 10);
+    var levels = parseInt(document.getElementById("numLevels").value, 10);
 
     var result = Array.from({length: levels+1}, (v, i) => 0);
-    console.log(result);
 
+
+    //For all balls
     for(var i = 0; i < balls; i++){
-        var index = 0;
-        if(i%1000 == 0){ 
-            console.log("Ball nr " + i);
-        }
+        var index = 0; //Base index, will be moved each time a TRUE is rolled
 
+        //For each level, do coinflip
         for(var j = 0; j < levels; j++){
             if(Math.random() >= 0.5){
                 index++; //Move in the result array if the coin flip is TRUE
@@ -62,10 +66,9 @@ function dropBalls(){
         result[index] = result[index] + 1;
     }
     return result;
-
 }
 
 
 
 
-canvas.addEventListener('click', onclick);
+runButton.addEventListener('mousedown', onclick);
