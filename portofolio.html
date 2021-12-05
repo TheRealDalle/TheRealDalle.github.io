@@ -296,12 +296,41 @@
 
 		<script src="js/wallPaperDrawer.js"></script>
 
-		</div>
+	</div>
 	
 		<p><br></p>
 
 
+	
+	<p><br></p>
+	<div class="smallProject">
 
+
+
+		<h1 class="subtitle">Pixel</h1>
+	
+		<p>Simulerar hur färg byggs upp av individuella pixlar
+			<br> Alla våra skärnar byggs upp av pixlar, som i sin tur består av 3 små lampor; röd, grön, och blå.
+			Med hjälp av dessa kan man bygga upp all synliga färger genom att lura ögat, eftersom varje individuell pixel är så sjukt liten. <br><br>
+			Denna simulering synliggör "tricket" genom att kunna förändra hur stor varje pixel är (varje pixel är egentligen 3x mindre än det minsta i denna simulering).
+		</p>
+		<canvas id="pixelCanvas" width="800" height="300" style="border:1px solid #000000;">
+		</canvas>
+
+		<br>
+		"Pixel"-storlek <input type="range" id="pxsize" name="pxsize" 
+		min="1" max="30" value="1" step="1" class="customSlider">
+
+		<br>
+		<br>
+		Färg: <input type="color" id="pxColor" width="10" value="#636363">
+		
+
+		<script src="js/pixels.js"></script>
+	
+		</div>
+		
+			<p><br></p>
 	<div class="footerli">
 	</div>
 
